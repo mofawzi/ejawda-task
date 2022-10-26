@@ -1,0 +1,20 @@
+{
+    "tabs": [
+        {
+            "id": 1,
+            "name": "all"
+        },
+        {
+            "id": 2,
+            "name": "subrecords"
+        },
+        {
+            "id": 3,
+            "name": "instituteslogCount"
+        },
+        {
+            "id": 4,
+            "name": "favouriteLogs"
+        }
+    ]
+}

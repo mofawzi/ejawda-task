@@ -1,0 +1,32 @@
+{
+    "licenses": [
+        {
+            "id": 1,
+            "instituteName": "الشركة السعودية للكهرباء",
+            "logo": "blank_logo_1.png",
+            "requiredPayment": "1,200",
+            "totalCount": "100"
+        },
+        {
+            "id": 2,
+            "instituteName": "شركة الإتصالات السعودية",
+            "logo": "blank_logo_2.png",
+            "requiredPayment": "1,000",
+            "totalCount": "110"
+        },
+        {
+            "id": 3,
+            "instituteName": "شركة المياه الوطنية",
+            "logo": "blank_logo_3.png",
+            "requiredPayment": "900",
+            "totalCount": "120"
+        },
+        {
+            "id": 4,
+            "instituteName": "المنصة الوطنية للمخالفات",
+            "logo": "blank_logo_4.png",
+            "requiredPayment": "100",
+            "totalCount": "112"
+        }
+    ]
+}

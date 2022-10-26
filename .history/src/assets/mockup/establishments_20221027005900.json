@@ -1,0 +1,46 @@
+{
+    "facilities": [
+        {
+            "id": 1,
+            "name": "مؤسسة خالد للسياحة متعددة الأنشطة",
+            "status": "activeRecord",
+            "type": "mainRecord",
+            "isFavorite": false,
+            "isActive": true,
+            "institutionInfo": {
+                "type": "inistitution",
+                "expirationDate": "22/06/2022",
+                "unicode": 112233,
+                "commercialNumber": 456789
+            }
+        },
+        {
+            "id": 2,
+            "name": "مؤسسة سعد للسياحة نشاط فردى",
+            "status": "activeRecord",
+            "type": "mainRecord",
+            "isFavorite": true,
+            "isActive": false,
+            "institutionInfo": {
+                "type": "inistitution",
+                "expirationDate": "22/07/2022",
+                "unicode": 5555555,
+                "commercialNumber": 5454525
+            }
+        },
+        {
+            "id": 3,
+            "name": "مؤسسة قاسم للسياحة ثنائية النشاط",
+            "status": "cancelledRecord",
+            "type": "subRecord",
+            "isFavorite": false,
+            "isActive": false,
+            "institutionInfo": {
+                "type": "inistitution",
+                "expirationDate": "20/06/2022",
+                "unicode": 123456,
+                "commercialNumber": 5684956
+            }
+        }
+    ]
+}

@@ -7,7 +7,7 @@ const License = (props) => {
             <div className="card-title">
                 <div className="row">
                     <div className="col-8">
-                        <h5 className="facility-name">{props.item.facilityName}</h5>
+                        <h5 className="institute-name">{props.item.facilityName}</h5>
                     </div>
                     <div className="col-4 image-col">
                         <img src={require(`../../assets/images/${props.item.logo}`)} alt="not found" />

@@ -5,14 +5,14 @@ import License from "../License/License";
 import "./EstablishmentStats.scss";
 
 const establishments = require("../../assets/json/establishments.json");
-const insuranceLicenses = require("../../assets/json/insuranceLicenses.json");
+const insuranceLicences = require("../../assets/json/insuranceLicences.json");
 const establishmentCategory = require("../../assets/json/establishmentCategory.json");
 
 
 const EstablishmentStats = () => {
     const [active, setActive] = useState(1);
     const [facilities, updateFacilities] = useState(establishments.facilities);
-    const licenses = insuranceLicenses?.licenses;
+    const licences = insuranceLicences?.licences;
 
     const selectTab = (tab) => {
         setActive(tab.id);
@@ -55,10 +55,10 @@ const EstablishmentStats = () => {
             ></Establishment>
         );
     });
-    const licensesList = licenses.map((license) => {
+    const licencesList = licences.map((licence) => {
         return (
-            <div className="col-md-4 my-10" key={`col-l-${license.id}`}>
-                <License key={`l-${license.id}`} item={license} />
+            <div className="col-md-4 my-10" key={`col-l-${licence.id}`}>
+                <License key={`l-${licence.id}`} item={licence} />
             </div>
         );
     });
@@ -102,7 +102,7 @@ const EstablishmentStats = () => {
                     </h2>
                 </header>
 
-                <div className="row">{licensesList}</div>
+                <div className="row">{licencesList}</div>
             </section>
         </>
     );

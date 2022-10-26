@@ -1,0 +1,44 @@
+@import "../../../node_modules/bootstrap/scss/_functions.scss";
+@import "../../../node_modules/bootstrap/scss/_variables.scss";
+@import "../../../node_modules/bootstrap/scss/_mixins.scss";
+@import "../../assets/style/common-utils/vars.scss";
+
+.license-card {
+  .card-title {
+    padding: 1rem;
+    .inst-name {
+      font-weight: bold;
+      line-height: 3.9rem;
+      color: $secondary;
+    }
+    .image-col {
+      text-align: end;
+      img {
+        width: 50%;
+        display: inline-block;
+      }
+    }
+  }
+  .card-body {
+    padding: 1.5rem 2rem;
+    .stats {
+      h6 {
+        font-weight: bold;
+        color: $light-shade-1;
+      }
+      .custom-badge {
+        background-color: $light-shade-2;
+        color: $success;
+        font-weight: bold;
+        width: 80%;
+        font-size: 1.6rem;
+        height: 2.6rem;
+        margin-top: 1rem;
+      }
+    }
+    .total-count {
+      font-weight: bold;
+      line-height: 4rem;
+    }
+  }
+}

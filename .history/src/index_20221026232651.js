@@ -4,7 +4,6 @@ import { IntlProvider } from "react-intl";
 import { Provider } from "react-redux";
 import App from './App';
 import "./bootstrap.min.css";
-import './custom-styling.scss';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import store from "./store";

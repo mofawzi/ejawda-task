@@ -1,0 +1,23 @@
+@import "assets/style/common-utils/vars.scss";
+@import "assets/style/common-utils/font-typo.scss";
+@import "assets/style/common-utils/spacing.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "assets/style/components/buttons";
+@import "assets/style/components/headers";
+@import "assets/style/components/forms";
+
+* {
+  font-family: "Janna";
+}
+
+html {
+  font-size: 62.5%;
+  body {
+    box-sizing: border-box;
+    display: block;
+    overflow-x: hidden;
+  }
+  :root{
+    font-size: 1.6rem;
+  }
+}

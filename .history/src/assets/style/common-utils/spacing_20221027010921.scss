@@ -1,0 +1,11 @@
+@for $i from 1 to 150 {
+    $spacers: map-merge(
+      $spacers,
+      (
+        $i: (
+          $i * $spacer,
+        ),
+      )
+    );
+  }
+  

@@ -1,4 +1,6 @@
-.record-card {
+@import "../../assets/style/common-utils/vars.scss";
+
+.establishment-card {
   &-fav-btn:focus {
     outline: none !important;
     box-shadow: none !important;

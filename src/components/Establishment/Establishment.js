@@ -1,6 +1,6 @@
 import { FormattedMessage } from "react-intl";
-import EstablishmentDetails from './../../../.history/src/components/Establishment/EstablishmentDetails/EstablishmentDetails_20221027000253';
 import "./Establishment.scss";
+import EstablishmentDetails from "./EstablishmentDetails/EstablishmentDetails";
 
 const Establishment = (props) => {
     const toggleFavourite = () => {

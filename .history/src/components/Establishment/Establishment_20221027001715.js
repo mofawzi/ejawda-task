@@ -82,7 +82,9 @@ const Establishment = (props) => {
             </header>
 
             <body>
-
+                <EstablishmentDetails
+                    details={props.item.institutionInfo}
+                ></EstablishmentDetails>
             </body>
 
             <button className="btn btn-outline-info btn-lg card-btn">

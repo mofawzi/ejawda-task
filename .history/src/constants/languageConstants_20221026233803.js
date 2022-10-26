@@ -1,3 +1,0 @@
-export const SET_AR_LANGUAGE = "SET_AR_LANGUAGE";
-export const SET_EN_LANGUAGE = "SET_AR_LANGUAGE";
-export const RESET_LANGUAGE = "RESET_AR_LANGUAGE";

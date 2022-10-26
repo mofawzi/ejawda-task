@@ -1,5 +1,6 @@
 import { FormattedMessage } from "react-intl";
 import "./Establishment.scss";
+import EstablishmentDetails from "./EstablishmentDetails/EstablishmentDetails";
 
 const Establishment = (props) => {
     const toggleFavourite = () => {
@@ -82,7 +83,9 @@ const Establishment = (props) => {
             </header>
 
             <body>
-
+                <EstablishmentDetails
+                    details={props.item.institutionInfo}
+                ></EstablishmentDetails>
             </body>
 
             <button className="btn btn-outline-info btn-lg card-btn">

@@ -1,9 +1,10 @@
 import { FormattedMessage } from "react-intl";
 import "./Establishment.scss";
+import EstablishmentDetails from "./EstablishmentDetails/EstablishmentDetails";
 
 const Establishment = (props) => {
-    const toggleFavourite = () => {
-        props.onToggleFavourite(props.item);
+    const markFavorite = () => {
+        props.onMarkFavorite(props.item);
     };
 
     return (
@@ -33,7 +34,7 @@ const Establishment = (props) => {
                         className={`btn btn-outline-info mx-5 establishment-card-fav-btn ${props.item.isFavorite && "active"
                             }`}
                         disabled={props.item.isDeleted}
-                        onClick={toggleFavourite}
+                        onClick={markFavorite}
                     >
                         <i className="bi bi-star"></i>
                     </button>

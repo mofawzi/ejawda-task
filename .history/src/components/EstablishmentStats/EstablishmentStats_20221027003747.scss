@@ -1,0 +1,26 @@
+@import "../../../node_modules/bootstrap/scss/_functions.scss";
+@import "../../../node_modules/bootstrap/scss/_variables.scss";
+@import "../../../node_modules/bootstrap/scss/_mixins.scss";
+@import "../../assets/style/common-utils/vars.scss";
+
+.records {
+  min-height: 70vh;
+  &-tabs {
+    color: $gray-900;
+    border: 1px solid $white !important;
+    border-bottom: 5px solid $white !important;
+    &.active {
+      color: $gray-900 !important;
+      background: $white !important;
+      border: 1px solid $gray-400 !important;
+      border-bottom: 5px solid $info !important;
+    }
+  }
+}
+
+.licence-statistics {
+  padding: 1rem 0.5rem 5rem 0.5rem;
+}
+.nav-link {
+  color:black
+}

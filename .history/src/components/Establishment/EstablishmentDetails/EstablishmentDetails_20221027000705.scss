@@ -1,0 +1,19 @@
+@import "../../../../node_modules/bootstrap/scss/_functions.scss";
+@import "../../../../node_modules/bootstrap/scss/_variables.scss";
+@import "../../../assets/style/utils/variables.scss";
+
+.facility-info {
+  &--name {
+    color: $gray-600;
+    font-weight: 700;
+    font-size: 1.6rem;
+  }
+  &--info {
+    font-weight: 500;
+    color: $gray-900;
+  }
+  [class*="facility-info"] {
+    display: flex;
+    align-items: baseline;
+  }
+}

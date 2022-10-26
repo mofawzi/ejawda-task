@@ -1,0 +1,32 @@
+.record-card {
+  &-fav-btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  &-fav-btn:hover {
+    background-color: $hover-shade-1;
+  }
+  &-fav-btn:active,
+  &-fav-btn.active {
+    .icon {
+      &::before {
+        content: "\F586";
+        color: $light-shade-2;
+      }
+    }
+  }
+
+  .card-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .badge.bg-success {
+    background-color: $light-shade-3 !important;
+    span:first-child {
+      color: $secondary-shade-1;
+    }
+    span:nth-child(2) {
+      color: $success-shade-1;
+    }
+  }
+}

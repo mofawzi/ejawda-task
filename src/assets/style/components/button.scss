@@ -1,0 +1,14 @@
+.btn-outline-info {
+  &:not(:hover):not(:active):not(.active) {
+    background-color: $blue-100;
+    border-color: $blue-100;
+  }
+  &.active {
+    background-color: $info;
+    color: $white;
+  }
+}
+
+.btn-link {
+  color: $black !important;
+}

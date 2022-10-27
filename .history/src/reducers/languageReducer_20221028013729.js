@@ -12,23 +12,17 @@ export const languageReducer = (
         case SET_AR_LANGUAGE:
             return {
                 ...state,
-                language: {
-                    locale: "ar"
-                }
+                language: 'AR'
             };
         case SET_EN_LANGUAGE:
             return {
                 ...state,
-                language: {
-                    locale: "en"
-                }
+                language: 'EN'
             };
         case RESET_LANGUAGE:
             return {
                 ...state,
-                language: {
-                    locale: "en"
-                }
+                language: 'EN'
             };
         default:
             return state;

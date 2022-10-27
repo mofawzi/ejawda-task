@@ -1,0 +1,74 @@
+{
+    "general": [
+        {
+            "id": 1,
+            "name": "home",
+            "link": "/",
+            "iconName": "bi-house-fill"
+        },
+        {
+            "id": 2,
+            "name": "inbox",
+            "link": "/",
+            "iconName": "bi-file-arrow-down-fill"
+        },
+        {
+            "id": 3,
+            "name": "myorder",
+            "link": "/",
+            "iconName": "bi-file-earmark-text-fill"
+        },
+        {
+            "id": 4,
+            "name": "addresslogs",
+            "link": "/",
+            "iconName": "bi-book-half"
+        },
+        {
+            "id": 5,
+            "name": "authorizations",
+            "link": "/",
+            "iconName": "bi-people-fill"
+        }
+    ],
+    "services": [
+        {
+            "id": 6,
+            "name": "bookCommercialName",
+            "link": "/",
+            "iconName": "bi-pencil-square"
+        },
+        {
+            "id": 7,
+            "name": "renewCommercialLog",
+            "link": "/",
+            "iconName": "bi-person-badge-fill"
+        },
+        {
+            "id": 8,
+            "name": "deleteCommercialLog",
+            "link": "/",
+            "iconName": "bi-trash-fill"
+        }
+    ],
+    "otherLinks": [
+        {
+            "id": 9,
+            "name": "businessPlatform",
+            "link": "/",
+            "iconName": ""
+        },
+        {
+            "id": 10,
+            "name": "electronicServices",
+            "link": "/",
+            "iconName": ""
+        },
+        {
+            "id": 11,
+            "name": "contactUs",
+            "link": "/",
+            "iconName": ""
+        }
+    ]
+}

@@ -5,6 +5,7 @@ import { IntlProvider } from "react-intl";
 import { Provider } from "react-redux";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import App from './App';
+import "./bootstrap.min.css";
 import './custom-styling.scss';
 import './index.css';
 import reportWebVitals from './reportWebVitals';

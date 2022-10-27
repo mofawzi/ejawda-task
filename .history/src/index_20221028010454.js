@@ -7,6 +7,7 @@ import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import App from './App';
 import './custom-styling.scss';
 import './index.css';
+import reportWebVitals from './reportWebVitals';
 import store from "./store";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,3 +19,4 @@ root.render(
   </Provider>
 );
 
+reportWebVitals();

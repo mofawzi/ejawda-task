@@ -7,7 +7,7 @@ import "./Sidebar.scss";
 
 
 const Sidebar = () => {
-    const userData = require("../../assets/mockup/userData.json");
+    const userData = require("../../assets/json/userData.json");
     const language = useSelector((state) => state.language);
     const dispatch = useDispatch();
 

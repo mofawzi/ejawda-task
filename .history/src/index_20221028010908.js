@@ -9,12 +9,20 @@ import './custom-styling.scss';
 import './index.css';
 import store from "./store";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <Provider store={store}>
+//     <IntlProvider locale='en' defaultLocale="en">
+//       <App />
+//     </IntlProvider>
+//   </Provider>
+// );
+
+ReactDOM.render(
   <Provider store={store}>
     <IntlProvider locale='en' defaultLocale="en">
       <App />
     </IntlProvider>
-  </Provider>
+  </Provider>,
+  document.getElementById("root")
 );
-

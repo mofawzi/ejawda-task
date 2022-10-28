@@ -12,9 +12,12 @@ import store from "./store";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
+    {/* <IntlProvider locale='en' defaultLocale="en"> */}
     <LanguageProvider>
       <App />
     </LanguageProvider>
+
+    {/* </IntlProvider> */}
   </Provider>
 );
 

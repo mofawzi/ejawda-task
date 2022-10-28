@@ -31,12 +31,13 @@ const EstablishmentStats = () => {
         }
     };
     const markFavorite = (item) => {
-        let updatedRecords = establishments.facilities.map((facility) => {
-            if (item.id === facility.id) {
-                facility.isFavorite = !facility.isFavorite;
+        let updatedRecords = establishments.facilities.map((record) => {
+            if (item.id === record.id) {
+                record.isFavorite = !record.isFavorite;
             }
-            return facility;
+            return record;
         });
+
         updateFacilities(updatedRecords);
         setActive(1);
     };
@@ -46,7 +47,7 @@ const EstablishmentStats = () => {
             <Establishment
                 item={record}
                 key={`r-${record.id}`}
-                onMarkFavorite={markFavorite}
+                onToggleFavorite={markFavorite}
             ></Establishment>
         );
     });

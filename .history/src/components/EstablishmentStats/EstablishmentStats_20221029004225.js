@@ -35,7 +35,6 @@ const EstablishmentStats = () => {
             if (item.id === facility.id) {
                 facility.isFavorite = !facility.isFavorite;
             }
-            return facility;
         });
         updateFacilities(updatedRecords);
         setActive(1);
@@ -45,7 +44,7 @@ const EstablishmentStats = () => {
         return (
             <Establishment
                 item={record}
-                key={`r-${record.id}`}
+                key={record.id}
                 onMarkFavorite={markFavorite}
             ></Establishment>
         );

@@ -14,29 +14,39 @@ const EstablishmentStats = () => {
     const [facilities, updateFacilities] = useState(establishments.facilities);
     const licenses = insuranceLicenses?.licenses;
 
-    const subRecordEstablishments = establishments.facilities.filter((item) => item.type === 'subRecord');
-    const inistitutionEstablishments = establishments.facilities.filter((item) => item.type === 'mainRecord');
-    const favoriteEstablishments = establishments.facilities.filter((item) => item.isFavorite);
-
     const selectTab = (tab) => {
         setActive(tab.id);
-        if (tab.name === 'subRecords') {
-            updateFacilities(subRecordEstablishments)
-        } else if (tab.name === 'instituteslogCount') {
-            updateFacilities(inistitutionEstablishments)
-        } else if (tab.name === 'favouriteLogs') {
-            updateFacilities(favoriteEstablishments)
-        } else {
+        if (tab.id === 1) {
             updateFacilities(establishments.facilities);
+            return;
         }
+
+        const subRecordEstablishments = establishments.facilities.filter((item) => item.type === 'subRecord');
+        const inistitutionEstablishments = establishments.facilities.filter((item) => item.type === 'inistitution');
+        const favoriteEstablishments = establishments.facilities.filter((item) => item.isFavorite);
+
+        let filteredestablishments = establishments.facilities.filter((item) => {
+            switch (tab.id) {
+                case 2:
+                    return item.type === "subRecord";
+                case 3:
+                    return item.institutionInfo.type === "inistitution";
+                case 4:
+                    return item.isFavorite;
+                default:
+                    return true;
+            }
+        });
+        updateFacilities(filteredestablishments);
     };
     const markFavorite = (item) => {
-        let updatedRecords = establishments.facilities.map((facility) => {
-            if (item.id === facility.id) {
-                facility.isFavorite = !facility.isFavorite;
+        let updatedRecords = establishments.facilities.map((record) => {
+            if (item.id === record.id) {
+                record.isFavorite = !item.isFavorite;
             }
-            return facility;
+            return record;
         });
+
         updateFacilities(updatedRecords);
         setActive(1);
     };
@@ -46,7 +56,7 @@ const EstablishmentStats = () => {
             <Establishment
                 item={record}
                 key={`r-${record.id}`}
-                onMarkFavorite={markFavorite}
+                onToggleFavorite={markFavorite}
             ></Establishment>
         );
     });
@@ -68,7 +78,7 @@ const EstablishmentStats = () => {
                         />
                     </h2>
                 </header>
-                <ul className="nav nav-pills px-0 mb-20 ">
+                {/* <ul className="nav nav-pills px-0 mb-20 ">
                     {establishmentCategory.tabs.map((tab) => {
                         return (
                             <li className="nav-item " key={`t-${tab.id}`}>
@@ -84,7 +94,7 @@ const EstablishmentStats = () => {
                             </li>
                         );
                     })}
-                </ul>
+                </ul> */}
                 {commercialRecords}
             </section>
             <section className="licence-statistics" key={"licence-statistics"}>

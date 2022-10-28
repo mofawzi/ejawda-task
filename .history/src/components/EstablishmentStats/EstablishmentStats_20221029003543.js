@@ -15,28 +15,44 @@ const EstablishmentStats = () => {
     const licenses = insuranceLicenses?.licenses;
 
     const subRecordEstablishments = establishments.facilities.filter((item) => item.type === 'subRecord');
-    const inistitutionEstablishments = establishments.facilities.filter((item) => item.type === 'mainRecord');
+    const inistitutionEstablishments = establishments.facilities.filter((item) => item.type === 'inistitution');
     const favoriteEstablishments = establishments.facilities.filter((item) => item.isFavorite);
 
     const selectTab = (tab) => {
         setActive(tab.id);
-        if (tab.name === 'subRecords') {
+        if (tab.name === 'all') {
+            updateFacilities(establishments.facilities);
+        } else if (tab.name === 'subRecords') {
             updateFacilities(subRecordEstablishments)
         } else if (tab.name === 'instituteslogCount') {
             updateFacilities(inistitutionEstablishments)
         } else if (tab.name === 'favouriteLogs') {
             updateFacilities(favoriteEstablishments)
-        } else {
-            updateFacilities(establishments.facilities);
         }
+
+        // let filteredestablishments = establishments.facilities.filter((item) => {
+        //     switch (tab.id) {
+        //         case 2:
+        //             return item.type === "subRecord";
+        //         case 3:
+        //             return item.institutionInfo.type === "inistitution";
+        //         case 4:
+        //             return item.isFavorite;
+        //         default:
+        //             return true;
+        //     }
+        // });
+        const totalEstablishments = [...subRecordEstablishments, ...inistitutionEstablishments, ...favoriteEstablishments];
+        updateFacilities(totalEstablishments);
     };
     const markFavorite = (item) => {
-        let updatedRecords = establishments.facilities.map((facility) => {
-            if (item.id === facility.id) {
-                facility.isFavorite = !facility.isFavorite;
+        let updatedRecords = establishments.facilities.map((record) => {
+            if (item.id === record.id) {
+                record.isFavorite = !item.isFavorite;
             }
-            return facility;
+            return record;
         });
+
         updateFacilities(updatedRecords);
         setActive(1);
     };
@@ -46,7 +62,7 @@ const EstablishmentStats = () => {
             <Establishment
                 item={record}
                 key={`r-${record.id}`}
-                onMarkFavorite={markFavorite}
+                onToggleFavorite={markFavorite}
             ></Establishment>
         );
     });

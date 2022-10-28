@@ -35,10 +35,10 @@ const EstablishmentStats = () => {
             if (item.id === facility.id) {
                 facility.isFavorite = !facility.isFavorite;
             }
-            return facility;
         });
         updateFacilities(updatedRecords);
         setActive(1);
+        return;
     };
 
     const commercialRecords = facilities.map((record) => {

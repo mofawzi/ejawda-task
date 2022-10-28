@@ -35,22 +35,21 @@ const Sidebar = () => {
                 <img src={logo} className="d-block logo-image " alt="not found" />
             </div>
 
-            <div className="language_block">
-                <FormattedMessage id="lang" defaultMessage="اللغة" /> : <select
-                    className="form-select  d-block d-md-inline-block lang_btn"
-                    value={language.locale}
-                    onChange={(e) => { dispatch(updateLang(e)) }}
-                >
-                    <option defaultValue value="ar">العربية</option>
-                    <option value="en">English</option>
-                </select>
-            </div>
-
             <div className="aside-wrapper-user px-30">
                 <div className="d-flex justify-content-between mb-10">
                     <p className="text-white fs-6">
                         <FormattedMessage id="hello" defaultMessage="مرحباّ" />
                     </p>
+                </div>
+                <div className="language_block">
+                    <FormattedMessage id="lang" defaultMessage="اللغة" /> : <select
+                        className="form-select  d-block d-md-inline-block lang_btn"
+                        value={language.locale}
+                        onChange={(e) => { dispatch(updateLang(e)) }}
+                    >
+                        <option defaultValue value="ar">العربية</option>
+                        <option value="en">English</option>
+                    </select>
                 </div>
                 <p className="aside-wrapper-user text-white fs-5 pb-5 d-flex justify-content-between">
                     <span className="aside-wrapper-user-name">

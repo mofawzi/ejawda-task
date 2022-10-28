@@ -34,7 +34,6 @@ const Sidebar = () => {
             <div className="aside-wrapper d-flex justify-content-center align-items-center p-30">
                 <img src={logo} className="d-block logo-image " alt="not found" />
             </div>
-
             <div className="language_block">
                 <FormattedMessage id="lang" defaultMessage="اللغة" /> : <select
                     className="form-select  d-block d-md-inline-block lang_btn"

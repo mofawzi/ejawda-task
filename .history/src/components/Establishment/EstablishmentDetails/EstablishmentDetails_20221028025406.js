@@ -34,7 +34,7 @@ const EstablishmentDetails = (props) => {
                                 defaultMessage="تاريخ الانتهاء"
                             />
                         </p>
-                        <p className="facility-info_info">{props.expirationDate}</p>
+                        <p className="facility-info_info">{props.info.expirationDate}</p>
                     </div>
                 </div>
             </div>
@@ -50,7 +50,7 @@ const EstablishmentDetails = (props) => {
                                 defaultMessage="الرقم الموحد للمنشأة"
                             />
                         </p>
-                        <p className="facility-info_info">{props.unicode}</p>
+                        <p className="facility-info_info">{props.info.unicode}</p>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@ const EstablishmentDetails = (props) => {
                             />
                         </p>
                         <p className="facility-info_info">
-                            {props.commercialNumber}
+                            {props.info.commercialNumber}
                         </p>
                     </div>
                 </div>

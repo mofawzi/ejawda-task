@@ -39,7 +39,7 @@ const Sidebar = () => {
                 <select
                     className="form-select  d-block d-md-inline-block"
                     value={language.locale}
-                    onChange={(e) => { dispatch(updateLang(e)) }}
+                    onChange={() => { dispatch(updateLang()) }}
                 >
                     <option defaultValue value="ar">
                         العربية

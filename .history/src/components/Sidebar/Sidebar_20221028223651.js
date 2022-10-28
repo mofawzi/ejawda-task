@@ -1,8 +1,8 @@
 import { FormattedMessage } from "react-intl";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { setArLang, setEnLang } from "../../actions/languageActions";
 import logo from "../../assets/images/sbc_logo.png";
-import { updateLang } from './../../actions/languageActions';
 import "./Sidebar.scss";
 
 
@@ -39,7 +39,7 @@ const Sidebar = () => {
                 <select
                     className="form-select  d-block d-md-inline-block"
                     value={language.locale}
-                    onChange={(e) => { dispatch(updateLang(e)) }}
+                    onChange={() => { language.locale === "en" ? (dispatch(setArLang())) : (dispatch(setEnLang())) }}
                 >
                     <option defaultValue value="ar">
                         العربية

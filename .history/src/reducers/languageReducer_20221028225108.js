@@ -1,4 +1,4 @@
-import { SET_AR_LANGUAGE, SET_EN_LANGUAGE, UPDATE_LANGUAGE } from "../constants/languageConstants";
+import { RESET_LANGUAGE, SET_AR_LANGUAGE, SET_EN_LANGUAGE } from "../constants/languageConstants";
 
 export const languageReducer = (
     state = {
@@ -23,7 +23,7 @@ export const languageReducer = (
                     locale: "en"
                 }
             };
-        case UPDATE_LANGUAGE:
+        case RESET_LANGUAGE:
             return {
                 ...state,
                 language: {

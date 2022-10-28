@@ -11,7 +11,7 @@ const LanguageProvider = (props) => {
     const currentLanguage = useSelector(state => state.language);
     const { language } = currentLanguage;
     const dispatch = useDispatch();
-    dispatch(setArLang());
+    dispatch(setArLang())
 
     let messages;
 

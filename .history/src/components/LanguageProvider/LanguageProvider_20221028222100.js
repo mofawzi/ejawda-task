@@ -1,7 +1,7 @@
 import React from "react";
 import { IntlProvider } from "react-intl";
 import { useDispatch, useSelector } from 'react-redux';
-import { setArLang } from "../../actions/languageActions";
+import { setArLang, setEnLang } from "../../actions/languageActions";
 import Arabic from "../../assets/language/Arabic.json";
 import English from "../../assets/language/English.json";
 
@@ -9,17 +9,14 @@ import English from "../../assets/language/English.json";
 const LanguageProvider = (props) => {
     // const htmlPage = document.getElementById("page");
     const currentLanguage = useSelector(state => state.language);
-    const { language } = currentLanguage;
     const dispatch = useDispatch();
-    dispatch(setArLang());
-
+    const { language } = currentLanguage;
     let messages;
-
 
     if (language.locale === "en") {
         //     htmlPage.setAttribute("dir", "ltr");
         messages = English;
-
+        dispatch(setEnLang());
     } else if (language.locale === "ar") {
         //     htmlPage.setAttribute("dir", "rtl");
         messages = Arabic;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { IntlProvider } from "react-intl";
 import { useSelector } from 'react-redux';
 import Arabic from "../../assets/language/Arabic.json";
@@ -6,20 +6,23 @@ import English from "../../assets/language/English.json";
 
 
 const LanguageProvider = (props) => {
-    const htmlPage = document.getElementById("page");
+    // const htmlPage = document.querySelector("page");
+    useEffect(() => {
+
+    }, this)
     const currentLanguage = useSelector(state => state.language);
-    const [messages, setMessages] = useState(Arabic);
+    const [messages, setMessages] = useState(Arabic ? Arabic : {});
 
     if (currentLanguage.language.locale === "en") {
-        htmlPage.setAttribute("dir", "ltr");
+        // htmlPage.setAttribute("dir", "ltr");
         setMessages(English);
     } else if (currentLanguage.language.locale === "ar") {
-        htmlPage.setAttribute("dir", "rtl");
+        // htmlPage.setAttribute("dir", "rtl");
         setMessages(Arabic);
     }
 
     return (
-        <IntlProvider messages={messages} locale={currentLanguage.language.locale} defaultLocale="en">
+        <IntlProvider messages={messages} locale="en" defaultLocale="en">
             {props.children}
         </IntlProvider>
     );

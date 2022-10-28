@@ -6,15 +6,15 @@ import English from "../../assets/language/English.json";
 
 
 const LanguageProvider = (props) => {
-    const htmlPage = document.getElementById("page");
+    // const htmlPage = document.querySelector("page");
     const currentLanguage = useSelector(state => state.language);
     const [messages, setMessages] = useState(Arabic);
 
     if (currentLanguage.language.locale === "en") {
-        htmlPage.setAttribute("dir", "ltr");
+        // htmlPage.setAttribute("dir", "ltr");
         setMessages(English);
     } else if (currentLanguage.language.locale === "ar") {
-        htmlPage.setAttribute("dir", "rtl");
+        // htmlPage.setAttribute("dir", "rtl");
         setMessages(Arabic);
     }
 

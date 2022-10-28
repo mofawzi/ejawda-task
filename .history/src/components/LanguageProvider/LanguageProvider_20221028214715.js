@@ -1,20 +1,19 @@
 import React, { useState } from "react";
 import { IntlProvider } from "react-intl";
-import { useSelector } from 'react-redux';
 import Arabic from "../../assets/language/Arabic.json";
 import English from "../../assets/language/English.json";
 
 
 const LanguageProvider = (props) => {
-    const htmlPage = document.getElementById("page");
-    const currentLanguage = useSelector(state => state.language);
-    const [messages, setMessages] = useState(Arabic);
+    // const htmlPage = document.querySelector("page");
+    const currentLanguage = "en";
+    const [messages, setMessages] = useState(Arabic ? Arabic : {});
 
     if (currentLanguage.language.locale === "en") {
-        htmlPage.setAttribute("dir", "ltr");
+        // htmlPage.setAttribute("dir", "ltr");
         setMessages(English);
     } else if (currentLanguage.language.locale === "ar") {
-        htmlPage.setAttribute("dir", "rtl");
+        // htmlPage.setAttribute("dir", "rtl");
         setMessages(Arabic);
     }
 

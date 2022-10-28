@@ -7,7 +7,7 @@ import English from "../../assets/language/English.json";
 
 const LanguageProvider = (props) => {
     const htmlPage = document.getElementById("page");
-    const currentLanguage = useSelector(state => state.language);
+    const currentLanguage = useSelector(state => state);
     const [messages, setMessages] = useState(Arabic);
 
     if (currentLanguage.language.locale === "en") {

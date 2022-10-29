@@ -3,30 +3,30 @@
         {
             "id": 1,
             "facilityName": "الشركة السعودية للكهرباء",
-            "logo": "logo_1.png",
-            "requiredAmount": "1,200",
-            "totalCount": "100"
+            "logo": "sec_logo.png",
+            "requiredAmount": "7,342.55",
+            "totalCount": "121"
         },
         {
             "id": 2,
             "facilityName": "شركة الإتصالات السعودية",
-            "logo": "logo_2.png",
-            "requiredAmount": "1,000",
-            "totalCount": "110"
+            "logo": "stc_logo.png",
+            "requiredAmount": "3,204",
+            "totalCount": "5"
         },
         {
             "id": 3,
             "facilityName": "شركة المياه الوطنية",
-            "logo": "logo_3.png",
-            "requiredAmount": "900",
-            "totalCount": "120"
+            "logo": "nwc_logo.png",
+            "requiredAmount": "11,232.3",
+            "totalCount": "7"
         },
         {
             "id": 4,
             "facilityName": "المنصة الوطنية للمخالفات",
-            "logo": "logo_4.png",
-            "requiredAmount": "100",
-            "totalCount": "112"
+            "logo": "efaa_logo.png",
+            "requiredAmount": "2,321.3",
+            "totalCount": "29"
         }
     ]
 }

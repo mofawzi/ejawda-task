@@ -11,7 +11,7 @@ const Establishment = (props) => {
         <section className="establishment-card d-block card p-15 mb-25">
             <header className="establishment-card__header d-flex justify-content-between">
                 <div className="establishment-card__heading">
-                    <h3 className="mb-10 fw-bolder fs-5">{props.item.name}</h3>
+                    <h3 className="mb-10 fw-bolder fs-5"> <span><FormattedMessage id={props.item.name} /></span></h3>
                     <span className="establishment-card__badge badge bg-success mx-5 py-10">
                         <span>
                             <FormattedMessage id="recordStatus" defaultMessage="حالة السجل" /> : {" "}

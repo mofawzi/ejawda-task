@@ -70,7 +70,7 @@ const Sidebar = () => {
             </div>
 
             <nav className="aside-wrapper-nav">
-                <ul className="aside-wrapper-nav-items list-unstyled px-0">
+                <ul className="aside-wrapper-nav-items list-unstyled px-0 home_link">
                     {sidebarSections("general")}
                 </ul>
                 <hr className="bg-white" />

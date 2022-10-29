@@ -6,7 +6,6 @@ import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import App from './App';
 import LanguageHandler from "./components/LanguageHandler/LanguageHandler";
 import './custom-styling.scss';
-import './index.css';
 import store from "./store";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

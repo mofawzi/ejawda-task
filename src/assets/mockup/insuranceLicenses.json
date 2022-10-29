@@ -27,6 +27,20 @@
             "logo": "efaa_logo.png",
             "requiredAmount": "2,321.3",
             "totalCount": "29"
+        },
+        {
+            "id": 4,
+            "facilityName": "شركة المياه الوطنية",
+            "logo": "nwc_logo.png",
+            "requiredAmount": "2,321.3",
+            "totalCount": "29"
+        },
+        {
+            "id": 4,
+            "facilityName": "الشركة السعودية للكهرباء",
+            "logo": "sec_logo.png",
+            "requiredAmount": "2,321.3",
+            "totalCount": "29"
         }
     ]
 }

@@ -61,12 +61,12 @@
       background-position: 0 50%;
       background-repeat: no-repeat;
       background-size: cover;
+      margin: 1rem;
       .btn {
         border-radius: 0;
       }
       &.create-record {
         background-image: url("../../assets/images/abstract-city.jpg");
-
         .card-body {
           background-color: $opacity-overlay;
           .card-title {
@@ -81,7 +81,7 @@
       }
       &.create-licence {
         background-image: url("../../assets/images/calculations.jpg");
-
+        outline: none;
         .card-body {
           background-color: $opacity-overlay-dark;
           .card-text {
